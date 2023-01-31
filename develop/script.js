@@ -6,9 +6,21 @@ $(function () {
 var dateEl = document.getElementById("currentDay")
 dateEl.textContent = currentTime.format('MMM DD, YYYY');
 
-for (var i=0;i<11;i++)
-}
-
+for (var i=0;i<11;i++){
+  var temp = $('#hour'+i);
+  temp.find('button').click(function(){
+    localStorage.setItem(this.parentNode.id, $(this).prev().val());
+  });
+  if (currentTime.format('H')>i){
+    temp.attr("class","row time-block past");
+  } 
+  else if (currentTime.format('H')==i){
+    temp.attr("class","row time-block present");
+  }
+  else{
+    temp.attr("class","row time-block future")
+  };
+  temp.find('textarea').val(localStorage.getItem("hour-"+i));
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -28,4 +40,4 @@ for (var i=0;i<11;i++)
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-
+}});
