@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+  /* added lines of code on 7-10 to align my text in the center, playing with bold text */
   
 .display-3, .lead {
   text-align: center;
