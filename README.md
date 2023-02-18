@@ -31,9 +31,5 @@ THEN the saved events persist
 # Mock-Up 
 ![image](https://user-images.githubusercontent.com/117424603/215965553-f6e73f3c-2d66-4430-97b5-5334eee81b45.png)
 
-# Submission
-You are required to submit BOTH of the following for review:
-
-The URL of the functional, deployed application.
-
-The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+# Links
+https://bg2398.github.io/stay-organized/
